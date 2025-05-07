@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couple Form</title>
+    <style>
+        body {
+                font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            background-image: url(love.jpeg);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color:pink;
+        }
+
+        form {
+            background:pink;
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            height:600px;
+            margin: 0 auto 20px auto;
+            background-image: url(love-card-design_24908-13841.avif);
+            background-size: cover;
+            
+        }
+
+        form #partner1 {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            text-align: center;
+            color:red;
+            opacity: 0.5;
+        }
+        form #partner1:hover{
+          opacity: 10;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color:rgb(177, 71, 52);
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-items: center;
+        }
+
+        form button:hover {
+            background-color:rgb(179, 176, 0);
+            background-image: url(love.jpeg);
+            background-size: cover;
+            color:black;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 500px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            margin: 0 0 10px;
+            color: #007BFF;
+        }
+
+        .card p {
+            margin: 0;
+            color: #555;
+        }
+
+        #coupleCards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        lable{
+            text-align: center;
+        }
+        #anniversary{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Couple Data Form  Creating A Card For The Couple </h1>
+    <form id="coupleForm" action="creating card.php" method="POST">
+         <h2>Complete The Information</h2>
+        <input type="text" id="partner1" name="partner1" placeholder="ENTER WOMEN NAME FIRST" required><br><br>
+
+        <input type="text" id="partner1" name="partner2" placeholder="ENTER YOUR PARTNER NAME" required><br><br>
+
+        <input type="date" id="anniversary" name="anniversary" placeholder="enter anniversary date" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+   <!-- i am creating this form for you my queen -->
+</body>
+</html>
